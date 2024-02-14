@@ -1,0 +1,10 @@
+# Deep Directories
+**/node_modules
+
+# Generated Directories
+**/dist
+**/.next
+**/__coverage__
+
+# Files
+package-lock.json
