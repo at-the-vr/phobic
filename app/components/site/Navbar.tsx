@@ -21,12 +21,6 @@ export const Navbar = () => {
 								>
 									<SiGithub className="size-full" />
 								</a>
-								<a
-									href="https://twitter.com/at_the_vr"
-									className="size-10 p-2 text-gray-800 hover:text-blue-400"
-								>
-									<SiTwitter className="size-full" />
-								</a>
 							</nav>
 						</div>
 					</div>
