@@ -1,7 +1,8 @@
 import { Section } from './components/site/Section'
 import { Container } from './components/site/Container'
 import { Button } from './components/library/Button'
-import { ContentCard } from './components/library/Card'
+import { BlockLinkCard, ContentCard } from './components/library/Card'
+import { SiNextdotjs, SiVite } from 'react-icons/si'
 
 export default function Home() {
 	return (
@@ -227,6 +228,18 @@ export default function Home() {
 						plaintext="Some quick example text to build on the card title and make up the bulk of the card's content."
 						link={{ url: '/', text: 'Card Link' }}
 					></ContentCard>
+				</Section>
+				<Section
+					title="Block Link"
+					description="A simple card enhanced into a selectable block link"
+				>
+					{/* S I M P L E		C A R D */}
+					<BlockLinkCard text="Vite" url="https://vitejs.dev/">
+						<SiVite className="size-10" />
+					</BlockLinkCard>
+					<BlockLinkCard text="NextJs" url="https://nextjs.org/">
+						<SiNextdotjs className="size-10" />
+					</BlockLinkCard>
 				</Section>
 			</Container>
 		</>
