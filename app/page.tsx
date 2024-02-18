@@ -190,9 +190,36 @@ export default function Home() {
 					title="Destructive"
 					description="Destructive actions typically result in removal of an item and may result in an undesirable consequence."
 				>
-					<div className="bg-blue-500/50 p-3">Component 1</div>
-					<div className="bg-blue-500/50 p-3">Component 2</div>
-					<div className="bg-blue-500/50 p-3">Component 3</div>
+					<Button
+						colors={{
+							bg: 'bg-red-500',
+							hoverBg: 'hover:bg-red-600',
+							focusRing: 'focus:ring-red-500',
+						}}
+					>
+						Yes, I am sure I want to delete this
+					</Button>
+					<Button
+						variant="secondary"
+						colors={{
+							text: 'text-red-500',
+							hoverBorder: 'hover:border-red-500',
+							hoverBg: 'hover:bg-red-500',
+							focusRing: 'focus:ring-red-500',
+						}}
+					>
+						Unsubscribe
+					</Button>
+					<Button
+						variant="tertiary"
+						colors={{
+							text: 'text-gray-500',
+							hoverText: 'hover:text-gray-700',
+							focusRing: 'focus:ring-gray-500',
+						}}
+					>
+						Cancel
+					</Button>
 				</Section>
 			</Container>
 			<Container title="Card" description="A card is a flexible and extensible content container.">
