@@ -1,6 +1,7 @@
 import { Section } from './components/site/Section'
 import { Container } from './components/site/Container'
 import { Button } from './components/library/Button'
+import { ContentCard } from './components/library/Card'
 
 export default function Home() {
 	return (
@@ -193,14 +194,39 @@ export default function Home() {
 					<div className="bg-blue-500/50 p-3">Component 3</div>
 				</Section>
 			</Container>
-			<Container title="Component Name XXX" description="Component Description">
+			<Container title="Card" description="A card is a flexible and extensible content container.">
 				<Section
-					title="Section Heading using a component"
-					description="Section Description using a component"
+					title="Simple"
+					description="Simple cards display content and can provide a distinct link that can be selected."
 				>
-					<div className="bg-blue-500/50 p-3">Component 1</div>
-					<div className="bg-blue-500/50 p-3">Component 2</div>
-					<div className="bg-blue-500/50 p-3">Component 3</div>
+					{/* S I M P L E		C A R D */}
+					<ContentCard
+						title="Card title"
+						subtitle="CARD SUBTITLE"
+						plaintext="Some quick example text to build on the card title and make up the bulk of the card's content."
+						link={{ url: '/', text: 'Card Link' }}
+					></ContentCard>
+				</Section>
+				<Section
+					title="Simple Card with a Header and Footer"
+					description="Add an optional header and/or a footer within the card"
+				>
+					{/* S I M P L E		C A R D		W I T H		H E A D E R*/}
+					<ContentCard
+						header="Featured"
+						title="Card title"
+						subtitle="CARD SUBTITLE"
+						plaintext="Some quick example text to build on the card title and make up the bulk of the card's content."
+						link={{ url: '/', text: 'Card Link' }}
+					></ContentCard>
+					{/* S I M P L E		C A R D		W I T H		F O O T E R*/}
+					<ContentCard
+						footer="Last updated 5 mins ago"
+						title="Card title"
+						subtitle="CARD SUBTITLE"
+						plaintext="Some quick example text to build on the card title and make up the bulk of the card's content."
+						link={{ url: '/', text: 'Card Link' }}
+					></ContentCard>
 				</Section>
 			</Container>
 		</>
