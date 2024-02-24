@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
 	title: 'phobic',
 	description: 'phobic is a set of components made using react and tailwindcss',
+	metadataBase: new URL('https://phobic.vercel.app'),
 	openGraph: {
 		title: 'phobic',
 		description: 'phobic is a set of components made using react and tailwindcss',
@@ -22,6 +23,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
+			<link rel="icon" href="/favicon.jpg" />
 			<body className={inter.className}>
 				<div className="relative min-h-screen bg-white dark:bg-zinc-900">
 					<Providers>

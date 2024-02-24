@@ -2,6 +2,10 @@
 import { SiGithub } from 'react-icons/si'
 import ThemeSwitcher from './ThemeSwitcher'
 import Link from 'next/link'
+import { Eczar } from 'next/font/google'
+
+const josefin = Eczar({ subsets: ['latin'] })
+
 export const Navbar = () => {
 	return (
 		<header className="sticky top-0 z-50 w-full border-b bg-white dark:border-zinc-700 dark:bg-zinc-900">
@@ -11,7 +15,7 @@ export const Navbar = () => {
 						<div className="flex flex-1 items-center justify-start">
 							<Link
 								href="/"
-								className="inline-flex h-10 items-center justify-center text-lg font-bold text-gray-800 dark:text-white"
+								className={`inline-flex h-10 items-center justify-center text-2xl font-bold text-gray-800 dark:text-white ${josefin.className}`}
 							>
 								phobic
 							</Link>
