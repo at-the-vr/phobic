@@ -22,8 +22,7 @@ export const Navbar = () => {
 									href="https://github.com/at-the-vr/phobic"
 									className="size-10 p-2 text-gray-800 hover:text-green-700 dark:text-white dark:hover:text-green-700"
 								>
-									<span className="sr-only">This is the external link to GitHub Repository for this website</span>
-									<SiGithub className="size-full" />
+									<SiGithub className="size-full" aria-label="This is the external link to GitHub Repository for this website"/>
 								</a>
 							</nav>
 						</div>

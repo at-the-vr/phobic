@@ -19,7 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={inter.className}>
-				<div className="relative min-h-screen bg-white">
+				<div className="relative min-h-screen bg-white dark:bg-zinc-900">
 					<Providers>
 						{/* N A V B A R */}
 						<Navbar />

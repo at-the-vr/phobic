@@ -30,9 +30,9 @@ export default function ThemeSwitch() {
 			onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
 		>
 			{resolvedTheme === 'dark' ? (
-				<FiSun className="size-full" />
+				<FiSun className="size-full" aria-label="Click here to switch to Light Mode" />
 			) : (
-				<FiMoon className="size-full" />
+				<FiMoon className="size-full" aria-label="Click here to switch to Dark Mode"/>
 			)}
 		</button>
 	)
