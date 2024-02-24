@@ -18,7 +18,9 @@ export const Input: React.FC<InputProps> = ({ label, description, className, ...
 		<div className="max-w-sm space-y-3">
 			{label && <label className="mb-2 block text-sm font-medium dark:text-white">{label}</label>}
 			<input {...props} className={mergedClasses} />
-			{description && <p className="mt-2 block text-sm text-gray-500 dark:text-gray-400">{description}</p>}
+			{description && (
+				<p className="mt-2 block text-sm text-gray-500 dark:text-gray-400">{description}</p>
+			)}
 		</div>
 	)
 }
