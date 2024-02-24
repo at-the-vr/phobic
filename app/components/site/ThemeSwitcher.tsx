@@ -32,7 +32,7 @@ export default function ThemeSwitch() {
 			{resolvedTheme === 'dark' ? (
 				<FiSun className="size-full" aria-label="Click here to switch to Light Mode" />
 			) : (
-				<FiMoon className="size-full" aria-label="Click here to switch to Dark Mode"/>
+				<FiMoon className="size-full" aria-label="Click here to switch to Dark Mode" />
 			)}
 		</button>
 	)
