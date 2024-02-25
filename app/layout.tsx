@@ -8,11 +8,18 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'phobic',
-	description: 'phobic is a set of components made using react and tailwindcss',
+	description: 'phobic is a set of HTML components made using react and tailwindcss',
 	metadataBase: new URL('https://phobic.vercel.app'),
 	openGraph: {
 		title: 'phobic',
-		description: 'phobic is a set of components made using react and tailwindcss',
+		description: 'phobic is a set of HTML components made using react and tailwindcss',
+		images: [
+			{
+				url: 'https://phobic.vercel.app/api/og',
+				width: 800,
+				height: 600,
+			},
+		],
 	},
 }
 

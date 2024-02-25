@@ -5,6 +5,16 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'phobic | Button',
+	openGraph: {
+		title: 'phobic | button',
+		images: [
+			{
+				url: 'https://phobic.vercel.app/api/og?title=phobic | button',
+				width: 800,
+				height: 600,
+			},
+		],
+	},
 }
 
 export default function ButtonPage() {

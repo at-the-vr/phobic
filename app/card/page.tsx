@@ -7,6 +7,16 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'phobic | Card',
+	openGraph: {
+		title: 'phobic | card',
+		images: [
+			{
+				url: 'https://phobic.vercel.app/api/og?title=phobic | card',
+				width: 800,
+				height: 600,
+			},
+		],
+	},
 }
 
 export default function CardPage() {
