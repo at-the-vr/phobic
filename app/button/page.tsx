@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
 	title: 'phobic | Button',
 	openGraph: {
-		title: 'phobic | button',
+		title: 'phobic | Button',
 		images: [
 			{
 				url: 'https://phobic.vercel.app/api/og?title=phobic | button',
