@@ -1,6 +1,6 @@
 import { Container } from './components/site/Container'
-import { BlockLinkCard, ContentCard } from './components/library/Card'
-import { RxButton, RxIdCard, RxInput } from 'react-icons/rx'
+import { BlockLinkCard } from './components/library/Card'
+import { RxButton, RxDropdownMenu, RxIdCard, RxInput } from 'react-icons/rx'
 import Link from 'next/link'
 
 export default function Home() {
@@ -39,6 +39,16 @@ export default function Home() {
 					widthLimit="none"
 				>
 					<RxInput />
+				</BlockLinkCard>
+				<BlockLinkCard
+					CustomLinkComponent={Link}
+					customLinkProps={{
+						href: '/accordion',
+					}}
+					text="Accordion"
+					widthLimit="none"
+				>
+					<RxDropdownMenu />
 				</BlockLinkCard>
 			</div>
 		</Container>
