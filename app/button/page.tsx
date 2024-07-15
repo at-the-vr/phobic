@@ -23,6 +23,18 @@ export default function ButtonPage() {
 			title="Button"
 			description="A button is a widget that enables users to trigger an action or even, such as submitting a form, opening a dialog, cancelling an action or performing a delete operation."
 		>
+			<aside
+				aria-label="Note"
+				className="border-s-4 border-blue-500 bg-blue-200 p-4 dark:border-sky-700 dark:bg-indigo-950"
+			>
+				<p className="text-xl">Note</p>
+				<section>
+					Button has underwent significant changes and can be visited at{' '}
+					<a href="/newbutton" className="mt-2 underline">
+						New Button ↗
+					</a>
+				</section>
+			</aside>
 			<Section
 				title="Primary"
 				description="Primary actions should be obvious. Solid, High contrast background colors work great here."
