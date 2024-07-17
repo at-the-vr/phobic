@@ -32,7 +32,9 @@ export default function NewButtonPage() {
 				<NewButton className="bg-amber-500 hover:bg-amber-600 focus-visible:ring-amber-500">
 					Amber
 				</NewButton>
-				<NewButton className="bg-rose-500 hover:bg-rose-600 focus-visible:ring-rose-500">Rose</NewButton>
+				<NewButton className="bg-rose-500 hover:bg-rose-600 focus-visible:ring-rose-500">
+					Rose
+				</NewButton>
 				<NewButton className="bg-fuchsia-500 hover:bg-fuchsia-600 focus-visible:ring-fuchsia-500">
 					Fuchsia
 				</NewButton>

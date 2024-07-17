@@ -1,3 +1,4 @@
+'use client'
 import { cva, VariantProps } from 'class-variance-authority'
 import { ButtonHTMLAttributes } from 'react'
 import cn from '../../utils'
@@ -9,8 +10,20 @@ interface ButtonProps
 }
 
 export default function Button({ children, className, variant, size, ...props }: ButtonProps) {
+	const classNames = cn(buttonVariants({ variant, size, className }))
+
+	const copyStyles = () => {
+		navigator.clipboard
+			.writeText(classNames)
+			.then(() => {
+				alert(classNames)
+			})			.catch((err) => {
+				console.log('Failed to copy styles', err)
+			})
+	}
+
 	return (
-		<button {...props} className={cn(buttonVariants({ variant, size, className }))}>
+		<button onClick={copyStyles} {...props} className={classNames}>
 			{children}
 		</button>
 	)
