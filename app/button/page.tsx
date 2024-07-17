@@ -2,6 +2,7 @@ import { Container } from '../components/site/Container'
 import { Section } from '../components/site/Section'
 import { Button } from '../components/library/Button'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
 	title: 'phobic | Button',
@@ -30,9 +31,9 @@ export default function ButtonPage() {
 				<p className="text-xl">Note</p>
 				<section>
 					Button has underwent significant changes and can be visited at{' '}
-					<a href="/newbutton" className="mt-2 underline">
+					<Link href="/newbutton" className="mt-2 underline">
 						New Button ↗
-					</a>
+					</Link>
 				</section>
 			</aside>
 			<Section
