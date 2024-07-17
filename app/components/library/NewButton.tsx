@@ -16,8 +16,9 @@ export default function Button({ children, className, variant, size, ...props }:
 		navigator.clipboard
 			.writeText(classNames)
 			.then(() => {
-				alert(classNames)
-			})			.catch((err) => {
+				console.log('styles copied')
+			})
+			.catch((err) => {
 				console.log('Failed to copy styles', err)
 			})
 	}
